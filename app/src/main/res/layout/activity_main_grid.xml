@@ -1,0 +1,69 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="4"
+    android:orientation="horizontal"
+    tools:context=".MainActivity.kt">
+
+    <!-- Row 1 -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I love Android"
+        android:textSize="30sp"
+        android:layout_columnSpan="2"
+        tools:ignore="HardcodedText" />
+
+    <!-- Flag ImageButton -->
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flag"
+        android:contentDescription="Flag"
+        android:layout_column="1"
+        tools:ignore="HardcodedText" />
+
+    <!-- Row 2 -->
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:minHeight="48dp"
+        android:text="Switch on/off"
+        tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+    <!-- Row 3 -->
+    <Button
+        android:id="@+id/pressMeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/press_me"
+        android:layout_column="0"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:minHeight="48dp"
+        android:text="@string/check_this_out" />
+
+    <!-- Row 4 -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:hint="I love Android"
+        android:minHeight="48dp"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextFields,VisualLintTextFieldSize"
+        android:autofillHints=""
+        android:inputType="TODO" />
+
+</GridLayout>
+    Layout>

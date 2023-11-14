@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I love Android"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flag"
+            android:contentDescription="@string/flag" />
+    </LinearLayout>
+
+    <!-- Row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/switch_on_off"
+            tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+        <!-- Add any other views you want in this row -->
+    </LinearLayout>
+
+    <!-- Row 3 -->
+    <!-- Add a Button and Checkbox with appropriate attributes -->
+
+    <!-- Row 4 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="I love Android"
+        android:minHeight="48dp"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextFields,VisualLintTextFieldSize"
+        android:autofillHints="" />
+</LinearLayout>
